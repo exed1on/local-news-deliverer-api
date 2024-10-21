@@ -44,4 +44,9 @@ public class CityController {
             @RequestParam boolean includeGlobalNews) {
         return ResponseEntity.ok(newsArticleService.searchNewsByCity(cityName, stateName, includeGlobalNews));
     }
+
+    @GetMapping("/keep")
+    public ResponseEntity<String> keepAlive() {
+        return ResponseEntity.ok("Keep");
+    }
 }
