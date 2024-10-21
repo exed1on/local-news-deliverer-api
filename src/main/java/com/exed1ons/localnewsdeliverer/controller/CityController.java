@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @Controller
+@CrossOrigin(origins = "https://local-news-deliverer.onrender.com/")
 public class CityController {
     private final NewsArticleService newsArticleService;
 
